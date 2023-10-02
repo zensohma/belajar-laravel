@@ -1,0 +1,8 @@
+1. `@yield`: `@yield` digunakan untuk mendefinisikan sebuah area dalam halaman Blade yang dapat diisi dengan konten dari halaman lain. Ini sering digunakan untuk menyisipkan konten dinamis ke dalam layout utama. Contohnya, Anda bisa membuat area seperti `@yield('content')` dalam layout utama, dan kemudian di halaman lain, Anda bisa menggunakan `@section('content')` untuk mengisi konten tersebut.
+
+2. `@include`: `@include` digunakan untuk menyisipkan konten dari file Blade lain ke dalam file Blade yang sedang Anda buat. Ini berguna jika Anda ingin menggunakan komponen yang sama di beberapa halaman Blade tanpa harus menulis ulang kode tersebut. Contoh penggunaannya adalah `@include('partials.header')`, di mana 'partials.header' adalah nama file Blade yang ingin Anda sisipkan.
+
+3. `@extends`: `@extends` digunakan untuk menghubungkan sebuah halaman Blade dengan layout utama. Dengan kata lain, Anda bisa membuat halaman Blade untuk konten spesifik dan kemudian meng-extend layout utama untuk memasukkan struktur umum ke dalamnya. Contoh penggunaannya adalah `@extends('layouts.app')`, di mana 'layouts.app' adalah nama layout utama yang ingin Anda gunakan.
+
+4. `@container`: `@container` adalah directive yang digunakan untuk membuat elemen kontainer dalam Blade. Ini sering digunakan untuk mengelompokkan konten dalam tampilan Anda dan memberikan styling atau pemformatan tertentu. Contohnya, Anda bisa menggunakan `@container` untuk membuat div dengan kelas CSS sebagai kontainer untuk sekelompok elemen.
+
